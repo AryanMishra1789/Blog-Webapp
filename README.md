@@ -48,27 +48,11 @@ A full-stack MERN blog application with a beautiful glassmorphism design, featur
 - npm or yarn
 - MongoDB Atlas account
 
-### Local Development
-
-1. **Clone the repository**
+**Cloning the repository**
    ```bash
    git clone https://github.com/AryanMishra1789/Blog-Webapp.git
    cd Blog-Webapp
-2. **Backend Setup**
-   ```bash
-   cd server
-   npm install
-3. **Environment Variables**: Create a .env file in the server directory
-- MONGO_URI=your_mongodb_atlas_connection_string
-- JWT_SECRET=your_super_secret_jwt_key
-- NODE_ENV=development
-4. **Start Backend**
-  ```bash
-  npm start
-# Backend runs on http://localhost:5000
-5. **Frontend Setup**
-  ```bash
-  cd ../client
-  npm install
+
+
 
 
