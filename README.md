@@ -70,8 +70,5 @@ A full-stack MERN blog application with a beautiful glassmorphism design, featur
   ```bash
   cd ../client
   npm install
-6. **Start Frontend**
-   ```bash
-   npm start
-# Frontend runs on http://localhost:3000
+
 
