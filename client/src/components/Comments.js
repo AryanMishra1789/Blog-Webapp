@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
+import config from "../config";
 
 export default function Comments({ postId }) {
   const [comments, setComments] = useState([]);
@@ -10,7 +11,7 @@ export default function Comments({ postId }) {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/comments/${postId}`);
+        const res = await axios.get(`${config.API_BASE_URL}/comments/${postId}`);
         setComments(res.data);
       } catch (err) {
         console.error("Error fetching comments", err);
@@ -23,7 +24,7 @@ export default function Comments({ postId }) {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/comments",
+        `${config.API_BASE_URL}/comments`,
         { postId, text },
         {
           headers: { Authorization: `Bearer ${token}` },

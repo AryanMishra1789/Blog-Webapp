@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import config from "../config";
 
 export default function EditPost() {
   const [title, setTitle] = useState("");
@@ -15,7 +16,7 @@ export default function EditPost() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/posts`);
+        const res = await axios.get(`${config.API_BASE_URL}/posts`);
         const post = res.data.find((p) => p._id === id);
         if (!post) return alert("Post not found");
         setTitle(post.title);
@@ -31,7 +32,7 @@ export default function EditPost() {
     e.preventDefault();
     try {
       await axios.put(
-        `http://localhost:5000/api/posts/${id}`,
+        `${config.API_BASE_URL}/posts/${id}`,
         { title, content },
         { headers: { Authorization: `Bearer ${token}` } }
       );

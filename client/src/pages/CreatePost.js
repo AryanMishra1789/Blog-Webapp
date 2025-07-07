@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import config from "../config";
 
 export default function CreatePost() {
   const [title, setTitle] = useState("");
@@ -14,7 +15,7 @@ export default function CreatePost() {
 
   const submit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/posts", { title, content}, {
+    await axios.post(`${config.API_BASE_URL}/posts`, { title, content}, {
       headers: { Authorization: `Bearer ${token}` },
     });
     nav("/");

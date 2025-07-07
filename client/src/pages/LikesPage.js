@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
+import config from "../config";
 
 export default function LikesPage() {
   const { user } = useContext(AuthContext);
@@ -9,7 +10,7 @@ export default function LikesPage() {
   useEffect(() => {
     const fetchMyPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/posts");
+        const res = await axios.get(`${config.API_BASE_URL}/posts`);
         const filtered = res.data.filter(
           (post) => post.author === user.username
         );

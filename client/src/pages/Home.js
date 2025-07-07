@@ -4,6 +4,7 @@ import axios from "axios";
 import Comments from "../components/Comments";
 import { AuthContext } from "../AuthContext";
 import { useNavigate, Link } from "react-router-dom";
+import config from "../config";
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/posts");
+        const res = await axios.get(`${config.API_BASE_URL}/posts`);
         // Filter out any existing sample posts or JavaScript snippets
         const filteredPosts = res.data.filter(post => 
           !post.title.toLowerCase().includes('javascript') &&
@@ -40,7 +41,7 @@ export default function Home() {
     if (!window.confirm("Are you sure you want to delete this post?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/posts/${id}`, {
+      await axios.delete(`${config.API_BASE_URL}/posts/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -52,7 +53,7 @@ export default function Home() {
   };
   const handleLike = async (id) => {
   try {
-    const res = await axios.post(`http://localhost:5000/api/posts/${id}/like`, {}, {
+    const res = await axios.post(`${config.API_BASE_URL}/posts/${id}/like`, {}, {
       headers: { Authorization: `Bearer ${token}` },
     });
     setPosts((prev) =>
