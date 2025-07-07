@@ -1,24 +1,24 @@
-# 📝 Modern Blog Webapp
+# BlogX
 
 A full-stack MERN blog application with a beautiful glassmorphism design, featuring user authentication, post management, and real-time interactions.
 
-## 🌐 Live Demo
+## Live Demo
 
 - **Frontend**: [https://blogxwebapp.netlify.app/](https://blogxwebapp.netlify.app/)
 - **Backend API**: [https://blog-webapp-backend.onrender.com](https://blog-webapp-backend.onrender.com)
 
-## ✨ Features
+## Features
 
-- 🎨 **Modern Glassmorphism UI** - Beautiful, responsive design with floating elements
-- 🔐 **User Authentication** - Secure registration and login with JWT tokens
-- 📝 **Rich Text Editor** - Create and edit posts with ReactQuill
-- 💬 **Comments System** - Engage with posts through comments
-- ❤️ **Like System** - Like and unlike posts
-- 📱 **Responsive Design** - Works perfectly on all devices
-- 🎯 **Real-time Updates** - Dynamic content loading
-- 🔒 **Secure API** - Protected routes with authentication middleware
+- **Modern Glassmorphism UI** - Beautiful, responsive design with floating elements
+- **User Authentication** - Secure registration and login with JWT tokens
+- **Rich Text Editor** - Create and edit posts with ReactQuill
+- **Comments System** - Engage with posts through comments
+- **Like System** - Like and unlike posts
+- **Responsive Design** - Works perfectly on all devices
+- **Real-time Updates** - Dynamic content loading
+- **Secure API** - Protected routes with authentication middleware
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** - UI framework
@@ -41,7 +41,7 @@ A full-stack MERN blog application with a beautiful glassmorphism design, featur
 - **Backend**: Render
 - **Database**: MongoDB Atlas
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v14 or higher)
