@@ -12,7 +12,7 @@ const app = express();
 // CORS configuration for production
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-blog-app.netlify.app'] // Replace with your frontend domain
+    ? ['https://blogxwebapp.netlify.app'] // Your actual Netlify URL
     : ['http://localhost:3000'],
   credentials: true
 };
