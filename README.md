@@ -1,6 +1,6 @@
 # 📝 BlogX
 
-A full-stack MERN blog application that allows users to create, and interact with blog posts in a modern, visually appealing interface. with a beautiful glassmorphism design, featuring user authentication, post management, and real-time interactions.
+A full-stack MERN blog application that allows users to create, and interact with blog posts in a modern, visually appealing interface with a beautiful glassmorphism design, featuring user authentication, post management, and real-time interactions.
 
 This application provides a complete blogging experience where users can register accounts, write and publish articles, engage with content through comments and likes, and manage their own posts with full CRUD operations.
 
