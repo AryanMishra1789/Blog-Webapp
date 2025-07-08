@@ -55,6 +55,49 @@ This application provides a complete blogging experience where users can registe
    git clone https://github.com/AryanMishra1789/Blog-Webapp.git
    cd Blog-Webapp
 
+**Project Structure**
+Blog-Webapp/
+├── client/                 # React frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── src/
+│   │   ├── components/     # Reusable components
+│   │   │   ├── [Comments.js](http://_vscodecontentref_/0)
+│   │   │   └── Navbar.js
+│   │   ├── pages/         # Page components
+│   │   │   ├── [Home.js](http://_vscodecontentref_/1)
+│   │   │   ├── [Login.js](http://_vscodecontentref_/2)
+│   │   │   ├── [Register.js](http://_vscodecontentref_/3)
+│   │   │   ├── [CreatePost.js](http://_vscodecontentref_/4)
+│   │   │   ├── [EditPost.js](http://_vscodecontentref_/5)
+│   │   │   └── [LikesPage.js](http://_vscodecontentref_/6)
+│   │   ├── AuthContext.js # Authentication context
+│   │   ├── [config.js](http://_vscodecontentref_/7)      # API configuration
+│   │   ├── App.js         # Main app component
+│   │   ├── App.css        # Global styles
+│   │   └── index.js       # App entry point
+│   ├── package.json
+│   └── .gitignore
+├── server/                # Express backend
+│   ├── models/           # Database models
+│   │   ├── User.js
+│   │   ├── Post.js
+│   │   └── Comment.js
+│   ├── routes/           # API routes
+│   │   ├── auth.js
+│   │   ├── posts.js
+│   │   └── comments.js
+│   ├── .env             # Environment variables
+│   ├── [server.js](http://_vscodecontentref_/8)        # Main server file
+│   └── package.json
+├── .gitignore
+└── README.md
+
 
 
 
