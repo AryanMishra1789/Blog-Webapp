@@ -4,7 +4,7 @@ A full-stack MERN blog application that allows users to create, and interact wit
 
 This application provides a complete blogging experience where users can register accounts, write and publish articles, engage with content through comments and likes, and manage their own posts with full CRUD operations.
 
-## Deployment
+## Deployment Link
 
 - **Frontend**: [https://blogxwebapp.netlify.app/](https://blogxwebapp.netlify.app/)
 - **Backend API**: [https://blog-webapp-backend.onrender.com](https://blog-webapp-backend.onrender.com)
