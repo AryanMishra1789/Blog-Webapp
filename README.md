@@ -18,7 +18,7 @@ This application provides a complete blogging experience where users can registe
 - **Like System** - Like and unlike posts
 - **Responsive Design** - Works perfectly on all devices
 - **Real-time Updates** - Dynamic content loading
-- **Secure API** - Protected routes with authentication 
+- **Secure API** - Protected routes with authentication middleware
 
 ## Tech Stack
 
